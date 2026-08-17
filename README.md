@@ -150,6 +150,12 @@ app/src/main/java/com/uo300568/artchive/
 * A Firebase project
 * Google Places API credentials
 
+## Demo
+
+Download the latest APK and try Artchive on an Android device.
+
+[**Download APK**](https://github.com/AnaCR22/Artchive/releases/latest)
+
 ### Installation
 
 1. Clone the repository.
@@ -157,10 +163,6 @@ app/src/main/java/com/uo300568/artchive/
 3. Configure Firebase for the Android application.
 4. Add the required API keys to the local configuration.
 5. Build and run the application on an Android device or emulator.
-
-## Screenshots
-
-*Add application screenshots here to showcase the main screens and user flow.*
 
 ## Project Context
 
