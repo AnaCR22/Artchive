@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/headerConfiguracion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_configuracion"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separador"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/verdeGris"
+        android:alpha="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerConfiguracion" />
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sesion_iniciada_como"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/verdeGris"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/separador" />
+
+    <TextView
+        android:id="@+id/textoEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/marron"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelEmail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonCambiarPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_cambiar_password"
+        android:textSize="14sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoEmail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botonCerrarSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_cerrar_sesion"
+        android:textSize="14sp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonCambiarPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

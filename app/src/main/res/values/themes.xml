@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Artchive" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/verdOscuro</item>
+        <item name="colorSecondary">@color/marron</item>
+        <item name="colorSurface">@color/crema</item>
+        <item name="colorOnPrimary">@color/crema</item>
+        <item name="colorOnSurface">@color/verdOscuro</item>
+    </style>
+
+    <style name="Theme.Artchive" parent="Base.Theme.Artchive" />
+
+    <style name="CircleImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="Theme.Artchive.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/verdOscuro</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo2</item>
+        <item name="postSplashScreenTheme">@style/Theme.Artchive</item>
+    </style>
+
+    <style name="ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/verdeGris</item>
+    </style>
+
+    <style name="TabTextStyle" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

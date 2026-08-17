@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_principal"
+    app:startDestination="@id/cuadroFragment">
+
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="com.uo300568.artchive.ui.historial.HistorialFragment"
+        android:label="fragment_historial"
+        tools:layout="@layout/fragment_historial" >
+        <action
+            android:id="@+id/action_historialFragment_to_cuadroFragment"
+            app:destination="@id/cuadroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.uo300568.artchive.ui.favoritos.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_favoritosFragment_to_cuadroFragment"
+            app:destination="@id/cuadroFragment" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_artistaFragment"
+            app:destination="@id/artistaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configuracionFragment"
+        android:name="com.uo300568.artchive.ui.configuracion.ConfiguracionFragment"
+        android:label="fragment_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+    <fragment
+        android:id="@+id/cuadroFragment"
+        android:name="com.uo300568.artchive.ui.cuadro.CuadroFragment"
+        android:label="fragment_cuadro"
+        tools:layout="@layout/fragment_cuadro" >
+        <argument
+            android:name="cuadro"
+            app:argType="com.uo300568.artchive.domain.Cuadro"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_cuadroFragment_to_artistaFragment"
+            app:destination="@id/artistaFragment" />
+        <action
+            android:id="@+id/action_cuadroFragment_to_imagenCompletaFragment"
+            app:destination="@id/imagenCompletaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistaFragment"
+        android:name="com.uo300568.artchive.ui.artista.ArtistaFragment"
+        android:label="ArtistaFragment" >
+        <argument
+            android:name="nombreArtista"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_artistaFragment_to_cuadroFragment"
+            app:destination="@id/cuadroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/museoFragment"
+        android:name="com.uo300568.artchive.ui.museo.MuseoFragment"
+        android:label="MuseoFragment" />
+    <dialog
+        android:id="@+id/imagenCompletaFragment"
+        android:name="com.uo300568.artchive.ui.cuadro.ImagenCompletaFragment"
+        android:label="ImagenCompletaFragment">
+        <argument
+            android:name="imagenUrl"
+            app:argType="string" />
+    </dialog>
+</navigation>

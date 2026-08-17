@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cuadroFragment"
+        android:icon="@drawable/ic_diario_selector"
+        android:title="@string/nav_dailyart" />
+    <item
+        android:id="@+id/historialFragment"
+        android:icon="@drawable/ic_historial_selector"
+        android:title="@string/nav_historial" />
+    <item
+        android:id="@+id/favoritosFragment"
+        android:icon="@drawable/ic_favoritos_selector"
+        android:title="@string/nav_favoritos" />
+    <item
+        android:id="@+id/museoFragment"
+        android:icon="@drawable/ic_museo_selector"
+        android:title="@string/nav_museos" />
+    <item
+        android:id="@+id/configuracionFragment"
+        android:icon="@drawable/ic_conf_selector"
+        android:title="@string/nav_configuracion" />
+</menu>

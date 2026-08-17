@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Artchive</string>
+
+    <!-- Auth -->
+    <string name="bienvenida">¡Bienvenido a Artchive!</string>
+    <string name="slogan">Un nuevo cuadro. Una nueva historia. Cada día.</string>
+    <string name="boton_registrarse">Registrarse</string>
+    <string name="boton_iniciar_sesion">Iniciar sesión</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta? Regístrate</string>
+    <string name="titulo_iniciar_sesion">Iniciar sesión</string>
+    <string name="titulo_registrarse">Registrarse</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_confirmar_password">Confirmar contraseña</string>
+    <string name="hint_contrasena_actual">Contraseña actual</string>
+    <string name="hint_nueva_contrasena">Nueva contraseña</string>
+
+    <!-- Errores -->
+    <string name="error_campos_vacios">Rellena todos los campos antes de continuar</string>
+    <string name="error_passwords_no_coinciden">Contraseñas no coinciden. Prueba otra vez</string>
+    <string name="error_password_corta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_rellena_ambos_campos">Rellena ambos campos</string>
+    <string name="error_permiso_denegado">Permiso denegado</string>
+    <string name="error_ubicacion_no_disponible">No se pudo obtener la ubicación</string>
+    <string name="error_obtener_ubicacion">Error al obtener ubicación: %1$s</string>
+
+    <!-- Navegación -->
+    <string name="nav_dailyart">DailyArt</string>
+    <string name="nav_historial">Historial</string>
+    <string name="nav_favoritos">Favoritos</string>
+    <string name="nav_museos">Museos</string>
+    <string name="nav_configuracion">Configuración</string>
+
+    <!-- Etiquetas fecha -->
+    <string name="etiqueta_hoy">HOY</string>
+    <string name="etiqueta_ayer">AYER</string>
+
+    <!-- Favoritos -->
+    <string name="tab_obras">Obras</string>
+    <string name="tab_artistas">Artistas</string>
+    <string name="vacio_favoritos">No hay items en favoritos</string>
+    <string name="me_gusta">Me gusta</string>
+    <string name="compartir">Compartir</string>
+
+    <!-- Historial -->
+    <string name="vacio_historial">No hay cuadros en el historial</string>
+
+    <!-- Artista -->
+    <string name="tab_biografia">Biografía</string>
+    <string name="tab_obras_destacadas">Obras destacadas</string>
+
+    <!-- Museo -->
+    <string name="header_museos">Museos cerca de ti</string>
+
+    <!-- Configuración -->
+    <string name="sesion_iniciada_como">Sesión iniciada como:</string>
+    <string name="boton_cambiar_password">Cambiar contraseña</string>
+    <string name="boton_cerrar_sesion">Cerrar sesión</string>
+    <string name="dialog_cambiar_password">Cambiar contraseña</string>
+    <string name="dialog_confirmar">Cambiar</string>
+    <string name="dialog_cancelar">Cancelar</string>
+
+    <!-- Defaults -->
+    <string name="anonimo">Anónimo</string>
+    <string name="fecha_desconocida">Fecha desconocida</string>
+    <string name="sin_genero">Sin género</string>
+</resources>
